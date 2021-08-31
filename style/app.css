@@ -24,49 +24,120 @@ h4 {
   line-height: 1.5;
   color: var(--fifth-color);
 }
+h2 {
+  font-size: 48px;
+}
 p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.8;
   color: var(--fifth-color);
+  opacity: 0.8;
 }
 
-.homepage {
+.homepage-header {
   text-align: center;
-  padding: 200px 0;
-  background: #041122;
+  padding: 300px 0;
+  background: var(--fifth-color);
+  max-height: 100%;
 }
 
-.homepage p {
+.homepage-header p {
   font-size: 36px;
   font-weight: 600;
   margin: 0;
   color: white;
 }
 
-.homepage h2 {
+.homepage-header h2 {
   font-size: 24px;
   font-weight: 600;
   color: white;
   opacity: 0.9;
 }
 
-.homepage h1 {
+.homepage-header h1 {
   color: white;
   font-size: 96px;
 }
-.btn-branding {
+
+.homepage-projects {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-description {
+  padding: 80px;
+}
+.btn-homescreen {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
   border: 2px solid var(--primary-color);
   padding: 15px 40px;
   color: var(--primary-color);
-  transition: all 200ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
-.btn-branding:hover {
+.btn-homescreen:hover {
   font-size: 24px;
   border: 4px solid var(--third-color);
   color: var(--third-color);
+}
+.btn-branding {
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 2px solid var(--primary-color);
+  padding: 15px 30px;
+  color: var(--primary-color);
+  transition: all 350ms ease-in-out;
+}
+
+.btn-branding:hover {
+  font-size: 16px;
+  border: 2px solid var(--primary-color);
+  color: white;
+  background: var(--primary-color);
+}
+
+img {
+  border-radius: 4px;
+}
+@media (max-width: 1024px) {
+  .project-description {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .homepage-projects {
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .homepage-header h1 {
+    font-size: 48px;
+  }
+
+  .homepage-header {
+    padding: 220px 10px;
+  }
+
+  .homepage-header p {
+    font-size: 24px;
+  }
+
+  .homepage-header h2 {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
 }
