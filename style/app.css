@@ -4,7 +4,7 @@
   --third-color: #32a2ad;
   --fourth-color: #0d2b67;
   --fifth-color: #041122;
-  --h1-font-family: "Merriweather", serif;
+  --h1-font-family: "Old Standard TT", serif;
   --page-font-family: "Rubik", sans-serif;
 }
 
@@ -13,15 +13,17 @@ body {
 }
 h1 {
   font-family: var(--h1-font-family);
-  font-size: 68px;
+  font-size: 72px;
   line-height: 1.5;
   color: var(--fifth-color);
   text-transform: uppercase;
+  font-weight: 600px;
+  font-style: italic;
 }
 h2,
 h3,
 h4 {
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--fifth-color);
 }
@@ -36,6 +38,12 @@ p {
   opacity: 0.8;
 }
 
+.navbar {
+  background: var(--fifth-color);
+}
+.navbar-logo {
+  max-height: 30px;
+}
 .homepage-header {
   text-align: center;
   padding: 300px 0;
@@ -60,6 +68,7 @@ p {
 .homepage-header h1 {
   color: white;
   font-size: 96px;
+  text-transform: uppercase;
 }
 
 .homepage-projects {
@@ -104,14 +113,15 @@ p {
 }
 
 .about-me-avatar {
-  max-width: 600px;
+  max-width: 700px;
   height: auto;
 }
 
-.dark-header {
+.section-header {
   max-width: 80%;
   display: block;
   margin: 0 auto;
+  padding-top: 150px;
 }
 img {
   border-radius: 4px;
