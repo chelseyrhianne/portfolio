@@ -39,6 +39,13 @@ p {
   opacity: 0.8;
 }
 
+img {
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 50px;
+}
 .navbar {
   background: var(--fifth-color);
 }
@@ -48,8 +55,10 @@ p {
 .homepage-header {
   text-align: center;
   padding: 300px 0;
-  background: var(--fifth-color);
-  max-height: 100%;
+}
+
+.homepage-body {
+  background-color: var(--fifth-color);
 }
 
 .homepage-header p {
@@ -105,7 +114,7 @@ p {
 }
 .btn-branding {
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   border: 2px solid var(--primary-color);
   padding: 15px 30px;
@@ -114,7 +123,7 @@ p {
 }
 
 .btn-branding:hover {
-  font-size: 16px;
+  font-size: 18px;
   border: 2px solid var(--primary-color);
   color: white;
   background: var(--primary-color);
@@ -125,14 +134,33 @@ p {
   height: auto;
 }
 
-.section-header {
+.container {
   max-width: 80%;
   display: block;
   margin: 0 auto;
   padding-top: 150px;
 }
-img {
-  border-radius: 4px;
+
+.contact-links {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.contact-links:hover {
+  color: var(--third-color);
+  font-size: 24px;
+}
+
+.footer-links {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.footer-links:hover {
+  color: var(--third-color);
 }
 
 @media (max-width: 1024px) {
@@ -173,12 +201,12 @@ img {
   }
 }
 
-@media (max-width: 576px) {
-  .about-me-avatar {
-    display: none;
-  }
-
+@media (max-width: 768px) {
   .about-content {
+    text-align: center;
+  }
+  h1,
+  h2 {
     text-align: center;
   }
   h3 {
@@ -187,15 +215,9 @@ img {
   p {
     text-align: center;
   }
-}
 
-@media (max-width: 760px) {
-  .project-img {
-    display: none;
-  }
-
-  h1,
-  h2 {
-    text-align: center;
+  .about-me-avatar {
+    display: block;
+    margin: 0 auto;
   }
 }
