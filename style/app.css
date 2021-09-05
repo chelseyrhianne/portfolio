@@ -46,6 +46,36 @@ img {
 footer {
   margin-top: 50px;
 }
+
+.index-h1-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-h1 {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: var(--h1-font-family);
+  color: white;
+  font-size: 96px;
+  text-transform: uppercase;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .navbar {
   background: var(--fifth-color);
 }
@@ -73,12 +103,6 @@ footer {
   font-weight: 600;
   color: white;
   opacity: 0.9;
-}
-
-.homepage-header h1 {
-  color: white;
-  font-size: 96px;
-  text-transform: uppercase;
 }
 
 .project-tiles {
@@ -214,6 +238,15 @@ footer {
   }
   p {
     text-align: center;
+  }
+  .homepage-header h1 {
+    font-size: 24px;
+  }
+
+  .homepage-header h2,
+  p,
+  a {
+    font-size: 16px;
   }
 
   .about-me-avatar {
