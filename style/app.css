@@ -83,10 +83,13 @@ footer {
   from {
     width: 0;
   }
+  to {
+    width: 50%;
+  }
 }
 
 @keyframes blink {
-  50% {
+  70% {
     border-color: transparent;
   }
 }
