@@ -42,11 +42,23 @@ img {
 }
 
 footer {
-  margin-top: 50px;
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 90px;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 90px;
 }
 
 .index-h1-wrapper {
@@ -78,6 +90,7 @@ footer {
     border-color: transparent;
   }
 }
+
 .navbar {
   background: var(--third-color);
 }
@@ -158,13 +171,6 @@ footer {
 .about-me-avatar {
   max-width: 700px;
   height: auto;
-}
-
-.container {
-  max-width: 80%;
-  display: block;
-  margin: 0 auto;
-  padding-top: 150px;
 }
 
 .contact-links {
@@ -254,5 +260,13 @@ footer {
   .about-me-avatar {
     display: block;
     margin: 0 auto;
+  }
+
+  .btn-branding {
+    font-size: 12px;
+  }
+
+  .btn-main {
+    font-size: 14px;
   }
 }
